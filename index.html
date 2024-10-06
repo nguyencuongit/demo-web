@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siêu thị điện máy Pico</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./js/bootstrap.js"></script>
+</head>
+<body>
+    <!-- bacground -->
+    <div class="background">
+        <a href="#"><img src="./image/background.png" alt=""></a>
+        <div class="background-close"><i class="bi bi-x-square-fill"></i></div>
+    </div>
+    <!-- end background -->
+
+    <!-- header -->
+    <div id="header">
+        <div class="container">
+            <div class="header-t row">
+                <div id="logo" class="col-lg-3">
+                    <h1><a href="#"><img src="./image/logo.png" alt=""></a></h1>
+                </div>
+                <div class="col-lg-6">
+                    <div class="navigation-t">
+                        <ul>
+                            <li class="nav-item"><a href="#"><i class="bi bi-star"></i> Giá gốc</a></li>
+                            <li class="nav-item"><a href="#"><i class="bi bi-gift-fill"></i> Khuyến mãi</a></li>
+                            <li class="nav-item"><a href="#"><i class="bi bi-newspaper"></i> Tin tức</a></li>
+                            <li class="nav-item"><a href="#"><i class="bi bi-geo-alt-fill"></i> Tìm siêu thị</a></li>
+                            <li class="nav-item"><a href="#"><i class="bi bi-file-earmark-plus-fill"></i> Hóa đơn Cũ | Mới <img src="./image/new.gif" alt=""></a></li>
+                        </ul>
+                    </div>
+                    <div class="search-b">
+                        <form class="form-inline">
+                            <input class="form-control" type="search" placeholder="Nhập nội dung tìm kiếm..." aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><div class="btn-i"><i class="bi bi-search"></i></div></i></button>
+                        </form>
+                    </div>
+                </div>
+                <div class=" nav-right col-lg-3">
+                    <div class="cart"><div class="cart-i"><i class="bi bi-cart-dash"></i></div> Giỏ hàng</div>
+                    <div class="tutorial"><div class="tutorrial-i"><i class="bi bi-journal-text"></i></div>Hướng dẫn</div>
+                    <div class="face"><div class="face-i"><i class="bi bi-facebook"></i></div>Điện máy Pico</div>
+                </div>
+            </div>
+            <div class="header-b row">
+                <!-- menu -->
+                <div class="header-menu col-lg-3">
+                    <p><i class="bi bi-list"></i> danh mục mặt hàng</p>
+                    <div class="menu">
+                        <ul>
+                            <li class="menu-item">
+                                <h4><a href="#"><span><i class="bi bi-tv"></i></span> Điện tử</a></h4>
+                                <div class="menu-subitem">
+                                    <a href="#">Tivi,</a><a href="#"> Phụ kiện điện tử,</a><a href="#"> Thiết bị làm đẹp</a>
+                                </div>
+                                <div class="submenu">
+                                    <div class="submenu-items">
+                                        <a href="#">thương hiệu</a>
+                                        <ul>
+                                            <li><a href="#">TV Samsung</a></li>
+                                            <li><a href="#">TV Sony</a></li>
+                                            <li><a href="#">TV LG</a></li>
+                                            <li><a href="#">TV Casper</a></li>
+                                            <li><a href="#">TV TCL</a></li>
+                                            <li><a href="#">TV SkyWorth</a></li>
+                                            <li><a href="#">TV Máy Chiếu</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="submenu-items">
+                                        <a href="#">LOẠI TV</a>
+                                        <ul>
+                                            <li><a href="#">TV 8K</a></li>
+                                            <li><a href="#">TV 4K</a></li>
+                                            <li><a href="#">TV Full HD</a></li>
+                                            <li><a href="#">TV OLED</a></li>
+                                            <li><a href="#">TV QLED</a></li>
+                                            <li><a href="#">TV NEO QLED</a></li>
+                                            <li><a href="#">TV NANO CELL</a></li>
+                                            <li><a href="#">Lifestyle TV</a></li>
+                                            <li><a href="#">Smart TV - Internet TV</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="submenu-items">
+                                        <a href="#">PHỤ KIỆN ĐIỆN TỬ</a>
+                                        <ul><li><a href="#">Giá treo TV</a></li></ul>
+                                        <br>
+                                        <a href="#">THIẾT BỊ LÀM ĐẸP</a>
+                                        <ul><li><a href="#">LG</a></li></ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <h4><a href="#"><span><i class="bi bi-droplet"></i></span> Điện lạnh</a></h4>
+                                <div class="menu-subitem">
+                                    <a href="#">Tivi,</a><a href="#"> Tủ Nhật,</a><a href="#"> Máy giặt</a>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <h4><a href="#"><span><i class="bi bi-tv"></i></span> Đồ gia dụng</a></h4>
+                                <div class="menu-subitem">
+                                    <a href="#">Bình tắm nóng lạnh,</a><a href="#"> Đèn sưởi,</a><a href="#"> Máy lọc nước</a>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <h4><a href="#"><span><i class="bi bi-headphones"></i></span>Âm thanh</a></h4>
+                                <div class="menu-subitem">
+                                    <a href="#">Karaoke,</a><a href="#"> Dàn âm thanh,</a><a href="#"> Loa Sound Bar,</a><a href="#"> Loa kéo</a>
+                                </div> 
+                            </li>
+                            <li class="menu-item">
+                                <h4><a href="#"><span><i class="bi bi-laptop"></i></span> Thiết bị tin học</a></h4>
+                                <div class="menu-subitem">
+                                    <a href="#">Laptop,</a><a href="#"> Desktop,</a><a href="#"> Màn hình máy tính</a>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <h4><a href="#"><span><i class="bi bi-tv"></i></span>Điện thoại & Máy tính bảng</a></h4>
+                                <div class="menu-subitem">
+                                    <a href="#">Di động,</a><a href="#"> Máy tính bảng,</a><a href="#"> Điện thoại bàn</a>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <h4><a href="#"><span><i class="bi bi-apple"></i></span>Sản phẩm chính hãng Apple</a></h4>
+                                <div class="menu-subitem">
+                                    <a href="#">iPhone,</a><a href="#"> iPad,</a><a href="#"> Macbook,</a><a href="#"> Phụ kiện Apple</a>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <h4><a href="#"><span><i class="bi bi-umbrella-fill"></i></span>Thế giới Phụ kiện số</a></h4>
+                                <div class="menu-subitem">
+                                    <a href="#">Loa máy tính,</a><a href="#"> USB,</a><a href="#"> IP Camera,</a><a href="#"> Bao da</a>
+                                </div>
+                            </li>
+                            <li class="menu-item">
+                                <h4><a href="#"><span><i class="bi bi-umbrella-fill"></i></span>Thế giới phụ kiện điện máy</a></h4>
+                                <div class="menu-subitem">
+                                    <a href="#">Kệ kính Tivi,</a><a href="#"> Phụ kiện Bếp,</a><a href="#"> Giá treo Tivi</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- end menu -->
+                <div class="header-b-text col-lg-9">
+                    <i class="bi bi-telephone-fill"></i> <a href="#">1900.6619</a> - <a href="#">0904.881169</a> (8h30 - 17h30)
+                    <a href="#">Đăng nhập</a> hoặc <a href="#"> Đăng ký</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end header -->
+
+    <!-- body -->
+    <div id="body">
+        <div class="container">
+            <div class="row">
+                <div id="main" class="col-lg-8">
+                    <div class="main-slider">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                              <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <img src="./image/slider1.png" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./image/slider2.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./image/slider3.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./image/slider4.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./image/slider5.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./image/slider6.jpg" class="d-block w-100" alt="...">
+                              </div>
+                              <div class="carousel-item">
+                                <img src="./image/slider7.jpg" class="d-block w-100" alt="...">
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="sr-only">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                    <div class="main-product">
+                        <h3>mua nhiều nhất</h3>
+                        <div class="product-list row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-2">
+                            <div class="product-item">
+                                <div class="product-item-inner card">
+                                    <div class="product-item-img">
+                                    <a href="#"><img class="img-fluid" src="./image/product-1.jpg" alt=""></a>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <a href="#"><img src="./image/logo-SS.jpg" alt=""></a>
+                                        <h4><a href="#">Tivi Qled Samsung <br> QA65Q70BAKXXV 65" 4K Ultra HD</a></h4>
+                                        <p>32.400.000đ</p>
+                                        <span>32.900.000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <span class="product-gift"><i class="bi bi-gift-fill"></i> Quà tặng</span>
+                                <div class="product-item-inner card">
+                                    <a href="#"><img class="img-fluid" src="./image/product-2.jpg" alt=""></a>
+                                    <div class="product-item-text">
+                                        <a href="#"><img src="./image/logo-LG.jpg" alt=""></a>
+                                        <h4><a href="#">Tivi NanoCell LG 55NANO77TPA - 55" 4K-WebOS</a></h4>
+                                        <p>16.400.000đ</p>
+                                        <span>25.900.000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-item-inner card">
+                                    <a href="#"><img class="img-fluid" src="./image/product-3.jpg" alt=""></a>
+                                    <div class="product-item-text">
+                                        <a href="#"><img src="./image/logo_sony.png" alt=""></a>
+                                        <h4><a href="#">Tivi Led Sony KD50X75 - 50 4K-Ultra HD</a></h4>
+                                        <p>14.890.000đ</p>
+                                        <span>17.300.000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-list row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-2">
+                            <div class="product-item">
+                                <span class="product-gift"><i class="bi bi-gift-fill"></i> Quà tặng</span>
+                                <div class="product-item-inner card">
+                                    <a href="#"><img class="img-fluid" src="./image/product-4.jpg" alt=""></a>
+                                    <div class="product-item-text">
+                                        <a href="#"><img src="./image/logo-aqua.gif" alt=""></a>
+                                        <h4><a href="#">Tủ Lạnh SBS Aqua AQR-S541XASG 541 lít</a></h4>
+                                        <br>
+                                        <p>17.990.000đ</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <span class="product-gift"><i class="bi bi-gift-fill"></i> Quà tặng</span>
+                                <div class="product-item-inner card">
+                                    <a href="#"><img class="img-fluid" src="./image/product-5.jpg" alt=""></a>
+                                    <div class="product-item-text">
+                                        <a href="#"><img src="./image/logo-elec.jpg" alt=""></a>
+                                        <h4><a href="#">Máy Giặt Inverter Electrolux EWF1024BDWA 10kg</a></h4>
+                                        <p>10.290.000đ</p>
+                                        <span>13.990.000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <div class="product-item-inner card">
+                                    <a href="#"><img class="img-fluid" src="./image/product-6.jpg" alt=""></a>
+                                    <div class="product-item-text">
+                                        <a href="#"><img src="./image/logo-elec.jpg" alt=""></a>
+                                        <h4><a href="#">Máy Rửa Bát ELECTROLUX ESF6010BW</a></h4>
+                                        <p>7.999.000đ</p>
+                                        <span>10.999.000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-list row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-2">
+                            <div class="product-item">
+                                <span class="product-gift"><i class="bi bi-gift-fill"></i> Quà tặng</span>
+                                <div class="product-item-inner card">
+                                    <a href="#"><img class="img-fluid" src="./image/product-7.jpg" alt=""></a>
+                                    <div class="product-item-text">
+                                        <a href="#"><img src="./image/log-dell.gif" alt=""></a>
+                                        <h4><a href="#">Laptop Dell Vostro V3400-70270644 (P132G003) Core i3-1115G4</a></h4>
+                                        <p>12.999.000đ</p>
+                                        <span>14.499.000đ</span>
+                                    </div>                                   
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <span class="product-gift"><i class="bi bi-gift-fill"></i> Quà tặng</span>
+                                <div class="product-item-inner card">
+                                    <a href="#"><img class="img-fluid" src="./image/product-8.jpg" alt=""></a>
+                                    <div class="product-item-text">
+                                        <a href="#"><img src="./image/logo_Mitshu.gif" alt=""></a>
+                                        <h4><a href="#">Quạt Cây Mitsubishi LV16RACYGY 47W</a></h4>
+                                        <p>1.999.000đ</p>
+                                        <span>2.190.000đ</span>
+                                    </div>                              
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <span class="product-gift"><i class="bi bi-gift-fill"></i> Quà tặng</span>
+                                <div class="product-item-inner card">
+                                    <a href="#"><img class="img-fluid" src="./image/product-9.jpg" alt=""></a>
+                                    <div class="product-item-text">
+                                        <a href="#"><img src="./image/logo-SS.jpg" alt=""></a>
+                                        <h4><a href="#">Máy Giặt Samsung <br> WW85T4040CE/SV 8.5kg Inverter Màu Trắng</a></h4>
+                                        <br>
+                                        <p>7.990.000đ</p>
+                                    </div>                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-list row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-2">
+                            <div class="product-item">
+                                <span class="product-tag">mới</span>
+                                <div class="product-item-inner card">
+                                    <a href="#"><img class="img-fluid" src="./image/product-10.jpg" alt=""></a>
+                                    <div class="product-item-text">
+                                        <a href="#"><img src="./image/logo_Sharp.gif" alt=""></a>
+                                        <h4><a href="#">Lò Vi Sóng Sharp R-G272VN-S</a></h4>
+                                        <p>2.049.000đ</p>
+                                        <span>2.869.000đ</span>
+                                    </div>                                  
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <span class="product-tag">mới</span>
+                                <div class="product-item-inner card">
+                                    <a href="#"><img class="img-fluid" src="./image/product-11.jpg" alt=""></a>
+                                    <div class="product-item-text">
+                                        <a href="#"></a>
+                                        <h4><a href="#">Loa kéo Dalton TS-10G300X</a></h4>
+                                        <br>
+                                        <p>6.990.000đ</p>
+                                    </div>                                   
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <span class="product-tag">mới</span>
+                                <span class="product-gift"><i class="bi bi-gift-fill"></i> Quà tặng</span>
+                                <div class="product-item-inner card">
+                                    <a href="#"><img class="img-fluid" src="./image/product-12.jpg" alt=""></a>
+                                    <div class="product-item-text">
+                                        <a href="#"><img src="./image/logo-SS.jpg" alt=""></a>
+                                        <h4><a href="#">Máy Giặt Lồng Ngang Samsung WW90TP54DSBSV 9kg Inverter</a></h4>
+                                        <br>
+                                        <p>16.290.000đ</p>
+                                    </div>                                  
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-list row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-2">
+                            <div class="product-item">
+                                <span class="product-tag">mới</span>
+                                <span class="product-gift"><i class="bi bi-gift-fill"></i> Quà tặng</span>
+                                <div class="product-item-inner card">
+                                    <a href="#"><img class="img-fluid" src="./image/product-13.jpg" alt=""></a>
+                                    <div class="product-item-text">
+                                        <a href="#"><img src="./image/logo_Brother.gif" alt=""></a>
+                                        <h4><a href="#">Máy In Laser Brother HLL2321D</a></h4>
+                                        <p>3.599.000đ</p>
+                                        <span>3.999.000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <span class="product-tag">mới</span>
+                                <span class="product-gift"><i class="bi bi-gift-fill"></i> Quà tặng</span>
+                                <div class="product-item-inner card">
+                                    <a href="#"><img class="img-fluid" src="./image/product-15.jpg" alt=""></a>
+                                    <div class="product-item-text">
+                                        <a href="#"><img src="./image/logo-SS.jpg" alt=""></a>
+                                        <h4><a href="#">Máy Tính Bảng Samsung Tab A7 Lite (3GB/32Gb) Xám</a></h4>
+                                        <p>10.999.000đ</p>
+                                        <span>12.399.000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item">
+                                <span class="product-tag">mới</span>
+                                <span class="product-gift"><i class="bi bi-gift-fill"></i> Quà tặng</span>
+                                <div class="product-item-inner card">
+                                    <div class="product-img">
+                                        <a href="#"><img class=" img-fluid" src="./image/product-14.jpg" alt=""></a>
+                                    </div>
+                                    <div class="product-item-text">
+                                        <a href="#"><img src="./image/logo-hp.gif" alt=""></a>
+                                        <h4><a href="#">Laptop HP 15s-du1105TU (2Z6L3PA) Core i3-10110U</a></h4>
+                                        <p>2.190.000đ</p>
+                                        <span>4.490.000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebar-right" class="col-lg-4">
+                    <div class=" sidebar-banner">
+                        <div><a href="#"><img class="img-fluid" src="./image/baner1.gif" alt=""></a></div>
+                        <a href="#"><div class="banner banner-c">
+                            <p>crazy sales!</p>
+                            <p>Giá rẻ mỗi ngày</p>
+                            <span>xem</span>
+                            <i class="bi bi-star"></i>
+                        </div></a>
+                        <a href="#"><div class="banner banner-b">
+                            <p>mua trả góp</p>
+                            <p>Lãi suất thấp, nhiều ưu đãi</p>
+                            <span>xem</span>
+                            <i class="bi bi-star"></i>
+                        </div></a>
+                    </div>
+
+                    <div class="sidebar-main">
+                        <div class="main-block">
+                            <h3>bản tin</h3>
+                            <a href="#"><img class="img-fluid" src="./image/news1.png" alt=""></a>
+                            <p>panasonic, vui khỏe tiện nghi, trúng quà như ý</p>
+                            <a class="next" href="#">Đọc tiếp <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                        <div class="main-block">
+                            <h3>tư vấn mua sắm</h3>
+                            <a href="#"><img class="img-fluid" src="./image/news2.jpg" alt=""></a>
+                            <p>panasonic, vui khỏe tiện nghi, trúng quà như ý</p>
+                            <a class="next" href="#">Đọc tiếp <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="box-items row row-cols-1 row-cols-lg-2">
+                            <div>
+                                <a href="#">
+                                    <div class="box-item bg1">
+                                        <i class="bi bi-file-earmark-fill"></i>
+                                        <h3>hóa đơn</h3>
+                                        <p>Điện tử</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="#">
+                                    <div class="box-item bg2">
+                                        <i class="bi bi-people-fill"></i>
+                                        <h3>khách hàng</h3>
+                                        <p>Góp ý</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box-items row row-cols-1 row-cols-lg-2">
+                            <div>
+                                <a href="#">
+                                    <div class="box-item bg3">
+                                        <i class="bi bi-credit-card-2-back"></i>
+                                        <h3>thẻ</h3>
+                                        <p>Thành viên</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <div class="box-item bg4">
+                                        <i class="bi bi-lightbulb"></i>
+                                        <h3>mẹo vặt</h3>
+                                        <p>Hằng ngày</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="box-items row row-cols-1 row-cols-lg-2">
+                            <div>
+                                <a href="#">
+                                    <div class="box-item bg5">
+                                        <i class="bi bi-person-fill"></i>
+                                        <h3>tuyển dụng</h3>
+                                        <p>Nhân tài</p>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div>
+                                <a href="#">
+                                    <div class="box-item bg6">
+                                        <i class="bi bi-wrench-adjustable"></i>
+                                        <h3>chính sách</h3>
+                                        <p>bảo hành sản phẩm</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="sidebar-slide">
+                        <div class="sidebar-slide-t">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="./image/slide-t1.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./image/slide-t2.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./image/slide-t3.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./image/slide-t4.png" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./image/slide-t5.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="sidebar-slide-b">
+                            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                  <div class="carousel-item active">
+                                    <img src="./image/slide-b1.png" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./image/slide-b2.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                  <div class="carousel-item">
+                                    <img src="./image/slide-b3.jpg" class="d-block w-100" alt="...">
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row banner-bottom">
+                <div class="col-lg-4">
+                    <a href="#">
+                        <div class="banner banner-left">
+                            <p>vận chuyển</p>
+                            <p>Miễn phí bán kính 200KM</p>
+                            <span>xem</span>
+                            <i class="bi bi-star"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#">
+                        <div class="banner banner-center">
+                            <p>thanh toán cod</p>
+                            <p>Thanh toán trực tiếp khi nhận hàng</p>
+                            <span>xem</span>
+                            <i class="bi bi-star"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <a href="#">
+                        <div class="banner banner-right">
+                            <p>đổi trả hàng</p>
+                            <p>Thời gian đổi trả hàng lên đến 30 ngày</p>
+                            <span><i class="bi bi-arrow-repeat"></i></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end body -->
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="container">
+            <div class="upper-footer row">
+                <div class="col-lg-8">
+                    <p>nhận bản tin</p>
+                    <form class="form-inline">
+                        <input class="form-control" type="search" placeholder="Nhập e-mail nhận bản tin khuyến mại..." aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">đăng ký</button>
+                    </form>
+                </div>
+                <div class="col-lg-4">
+                    <p>follow us</p>
+                    <i class="bi bi-google"></i>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-youtube"></i>
+                </div>
+            </div>
+            <div class="main-footer row">
+                <div class="col-lg-3">
+                    <h3>pico.vn</h3>
+                    <ul>
+                        <li><a href="#"><i class="bi bi-caret-right-fill"></i> Giới thiệu hệ thống siêu thị</a></li>
+                        <li><a href="#"><i class="bi bi-caret-right-fill"></i> Địa chỉ chuỗi siêu thị</a></li>
+                        <li><a href="#"><i class="bi bi-caret-right-fill"></i> Tuyển dụng</a></li>
+                        <li><a href="#"><i class="bi bi-caret-right-fill"></i> Thẻ thành viên</a></li>
+                        <li><a href="#"><i class="bi bi-caret-right-fill"></i> Điểm bảo hành hãng</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h3>chính sách & quy định</h3>
+                    <ul>
+                        <li><a href="#"><i class="bi bi-caret-right-fill"></i> Chính sách bảo mật</a></li>
+                        <li><a href="#"><i class="bi bi-caret-right-fill"></i> Chính sách vận chuyển</a></li>
+                        <li><a href="#"><i class="bi bi-caret-right-fill"></i> Chính sách bảo hành</a></li>
+                        <li><a href="#"><i class="bi bi-caret-right-fill"></i> Chính sách đổi, trả hàng</a></li>
+                        <li><a href="#"><i class="bi bi-caret-right-fill"></i> Quy định thanh toán</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h3>hướng dẫn sử dụng</h3>
+                    <ul>
+                        <li><a href="#"><i class="bi bi-caret-right-fill"></i> Hướng dẫn mua hàng</a></li>
+                        <li><a href="#"><i class="bi bi-caret-right-fill"></i> Hướng dẫn thanh toán</a></li>
+                        <li><a href="#"><i class="bi bi-caret-right-fill"></i> Hướng dẫn sử dụng HĐĐT</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h3>liên hệ</h3>
+                    <ul>
+                        <li>Tổng đài bán hàng (8:15 - 18:00)</li>
+                        <li>
+                            <i class="bi bi-telephone-fill"></i>
+                            <a class="font-weight-bold" href="#">1900.6619</a> <br>
+                            <a class="font-weight-bold" href="#">0904.881169</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope-fill"></i>
+                            <a href="#">online@pico.com.vn</a>
+                        </li>
+                        <li>Tổng đài CSKH (8:15 - 21:30)</li>
+                        <li>
+                            <i class="bi bi-telephone-fill"></i>
+                            <a class="font-weight-bold" href="#">1900.6699</a>
+                        </li>
+                        <li>
+                            <i class="bi bi-envelope-fill"></i>
+                            <a href="#">chamsockhachhang@pico.com.vn</a>
+                        </li>
+                        <li><a href="#">facebook.com/dienmaypico</a></li>
+                        <li><a href="#">Hóa đơn VAT Local</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-system">
+                <h3>hệ thống siêu thị điện máy pico trên toàn quốc</h3>
+                <ul>
+                    <li><a href="#">Hà Nội</a> <span>12</span></li>
+                    <li><a href="#">Hải Phòng</a> <span>2</span></li>
+                    <li><a href="#">Ninh Bình</a> <span>2</span></li>
+                    <li><a href="#">Phú Thọ</a> <span>1</span></li>
+                    <li><a href="#">Hà Nam</a> <span>1</span></li>
+                    <li><a href="#">Nam Định</a> <span>1</span></li>
+                    <li><a href="#">Thanh Hóa</a> <span>1</span></li>
+                    <li><a href="#">Vĩnh Phúc</a> <span>1</span></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p>Chấp nhận thanh toán:</p>   
+                        <a href="#"><img id="logo-visa" src="./image/Visa_Inc._logo.svg.png" alt=""></a>
+                        <a href="#"><img id="logo-visa" src="./image/visa-logo.png" alt=""></a>
+                    </div>
+                    <div class="footer-bct col-lg-4">
+                        <a href="#"><img src="./image/chong-hang-gia.png" alt=""></a>
+                        <a href="#"><img class="footer-bct-item" src="./image/bct.jpg" alt=""></a>
+                    </div>
+                    <div class="col-lg-4">
+                        <p>Chứng nhận Website bảo mật:</p>
+                        <a href="#"><img class="ssl" src="./image/ssl.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="address row">
+                    <p>© Công ty Cổ phần Pi Co. Văn phòng: Tầng 3, Tòa nhà Rivera Park, số 173 Xuân Thủy, Cầu Giấy, Hà Nội.</p>
+                    <p>GPĐKKD số 0102018260 sở KHĐT Tp. Hà Nội cấp ngày 25/08/2006. Đăng ký thay đổi lần thứ: 24, ngày 17/06/2016</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end footer -->
+<script src="./script.js"></script>
+</body>
+</html>
